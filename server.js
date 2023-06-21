@@ -25,8 +25,8 @@ mongoose
 //   console.log(con.connection);
 // });
 
-const server = app.listen(8000, () => {
-  console.log('listening (Running in port 8000)');
+const server = app.listen(process.env.PORT, () => {
+  console.log('listening.. ');
 });
 // handle the REJECTION Error golbly and exit the app
 process.on('unhandledRejection', (err) => {
